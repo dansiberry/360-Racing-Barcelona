@@ -93,14 +93,17 @@ header {
 .nav--mobile-active .burger-icon__bar:before{
   transform: rotate(-45deg);
   transform-origin: right;
-  width:90%;
-  top:-8px;
+  width: 85%;
+  top: -8px;
+  left: 1px;
 }
 
 .nav--mobile-active .burger-icon__bar:after{
   transform: rotate(45deg);
   transform-origin: right;
-  width:90%;
+  width: 85%;
+  top: 6px;
+  right: 3px;
 }
 
 //Small styles and down
