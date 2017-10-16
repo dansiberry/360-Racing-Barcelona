@@ -29,10 +29,21 @@
 
 .feature-2-col__image-container {
   min-width: 300px;
-  width:40%;
-  padding: 0px 5%;
+  width:50%;
+  padding: 0px 6%;
   display: flex;
   align-items: center;
+}
+
+.feature-2-col__image-frame {
+  align-items: center;
+  align-content: center;
+  justify-conent: center;
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  max-width: 500px;
+  height:65%;
 }
 
 .feature-2-col__image{
@@ -42,8 +53,8 @@
 
 .feature-2-col__image-container-grid {
   min-width: 300px;
-  width:45%;
-  padding: 0px 2%;
+  width:50%;
+  padding: 0px 6%;
   display: flex;
   flex-wrap:wrap;
   align-items: center;
@@ -53,13 +64,13 @@
 .feature-2-col__image-grid{
   width:45%;
   max-width: 500px;
-  margin:2%;
+  margin:2.5%;
 }
 
 .feature-2-col__image-container-bands {
-  width:45%;
+  width:50%;
   min-width: 300px;
-  padding: 0px 2%;
+  padding: 0px 6%;
   display: flex;
   flex-wrap:wrap;
   align-items: center;
@@ -69,14 +80,14 @@
 .feature-2-col__image-band{
   width:45%;
   max-width: 500px;
-  margin:2%;
+  margin:2.5%;
 }
 
 .feature-2-col__text-block {
   margin-top: 20px;
   min-width: 260px;
   max-width: 550px;
-  width:40%;
+  width:50%;
   padding-left: 10%;
   padding-right: 20px;
   text-align: center;
@@ -126,14 +137,15 @@
 }
 
 .feature-1-col {
-  height:400px;
+  height:450px;
   display:flex;
   align-items:center;
   flex-direction:column;
   justify-content:center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position-y: -200px;
+  // background-position-y: -50px;
 }
 
 .feature-1-col:nth-child(3) {
@@ -188,15 +200,36 @@
   width:100%;
 }
 
+//Xl styles and down
+@media only screen and (max-width:$xl-max) {
+  .feature-1-col {
+    height: 600px;
+  }
+  .feature-2-col {
+    height: 600px;
+    padding: 0px 200px;
+  }
+}
+
+//Lg styles and down
+@media only screen and (max-width:$lg-max) {
+  .feature-2-col {
+    padding: 0px 100px;
+  }
+}
 
 //Medium styles and down
 @media only screen and (max-width:$md-max) {
+  .feature-1-col {
+    height:500px;
+  }
   .feature-2-col {
-  padding: 0px 20px;
+    padding: 0px 20px;
+    height:500px;
   }
 
-  .feature-1-col {
-    background-position-y: 0px;
+  .feature-2-col__image-container {
+    width: 40%;
   }
 }
 
@@ -206,8 +239,9 @@
     flex-direction: column;
     align-content:center;
     align-items:center;
+    justify-content:center;
     padding: 50px 15px;
-    height:550px;
+    height:650px;
   }
  .feature-2-col__text-block {
     padding-left: 0px;
@@ -233,7 +267,7 @@
 //X-Small styles and down
 @media only screen and (max-width:$xs-max) {
   .feature-2-col {
-    height: initial;
+    height: 400px;
   }
   .feature-2-col__text-block {
     margin-top: 0px;

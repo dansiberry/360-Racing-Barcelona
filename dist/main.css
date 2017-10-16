@@ -255,8 +255,8 @@ a {
 
 .feature-2-col__image-container {
   min-width: 300px;
-  width: 40%;
-  padding: 0px 5%;
+  width: 50%;
+  padding: 0px 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,14 +264,30 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+.feature-2-col__image-frame {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-conent: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  height: 65%; }
+
 .feature-2-col__image {
   width: 100%;
   max-width: 500px; }
 
 .feature-2-col__image-container-grid {
   min-width: 300px;
-  width: 45%;
-  padding: 0px 2%;
+  width: 50%;
+  padding: 0px 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,12 +302,12 @@ a {
 .feature-2-col__image-grid {
   width: 45%;
   max-width: 500px;
-  margin: 2%; }
+  margin: 2.5%; }
 
 .feature-2-col__image-container-bands {
-  width: 45%;
+  width: 50%;
   min-width: 300px;
-  padding: 0px 2%;
+  padding: 0px 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,13 +322,13 @@ a {
 .feature-2-col__image-band {
   width: 45%;
   max-width: 500px;
-  margin: 2%; }
+  margin: 2.5%; }
 
 .feature-2-col__text-block {
   margin-top: 20px;
   min-width: 260px;
   max-width: 550px;
-  width: 40%;
+  width: 50%;
   padding-left: 10%;
   padding-right: 20px;
   text-align: center;
@@ -366,7 +382,7 @@ a {
   width: max-content; }
 
 .feature-1-col {
-  height: 400px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,8 +397,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -200px; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .feature-1-col:nth-child(3) {
   background-image: url(img/food-background-1.jpg); }
@@ -436,11 +452,25 @@ a {
 .contact-info__title {
   width: 100%; }
 
-@media only screen and (max-width: 1199px) {
-  .feature-2-col {
-    padding: 0px 20px; }
+@media only screen and (max-width: 9999px) {
   .feature-1-col {
-    background-position-y: 0px; } }
+    height: 600px; }
+  .feature-2-col {
+    height: 600px;
+    padding: 0px 200px; } }
+
+@media only screen and (max-width: 1599px) {
+  .feature-2-col {
+    padding: 0px 100px; } }
+
+@media only screen and (max-width: 1199px) {
+  .feature-1-col {
+    height: 500px; }
+  .feature-2-col {
+    padding: 0px 20px;
+    height: 500px; }
+  .feature-2-col__image-container {
+    width: 40%; } }
 
 @media only screen and (max-width: 899px) {
   .feature-2-col {
@@ -453,8 +483,11 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 50px 15px;
-    height: 550px; }
+    height: 650px; }
   .feature-2-col__text-block {
     padding-left: 0px;
     padding-right: 0px;
@@ -473,7 +506,7 @@ a {
 
 @media only screen and (max-width: 599px) {
   .feature-2-col {
-    height: initial; }
+    height: 400px; }
   .feature-2-col__text-block {
     margin-top: 0px; }
   .logo {

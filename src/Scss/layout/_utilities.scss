@@ -8,9 +8,10 @@ $body-stack: 'helvetica', sans-serif;
 $decorative-stack: 'Tangerine',cursive, serif;
 
 //breakpoints
-$xl-min: 1700px;
+$xl-max: 9999px;
+$xl-min: 1600px;
 
-$lg-max: 1699px;
+$lg-max: 1599px;
 $lg-min: 1200px;
 
 $md-max: 1199px;
