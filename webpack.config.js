@@ -38,7 +38,7 @@ const config = {
     {
         test: /\.scss$/,
         use: extractPlugin.extract({
-            use: ['css-loader','postcss-loader', 'sass-loader']
+            use: ['css-loader?url=true','postcss-loader', 'sass-loader']
         })
     },
     {
@@ -53,22 +53,46 @@ const config = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'img/'
+            outputPath: 'images/'
+          }
+
+        }]
+    },
+    {
+        test: /\.(ttf|eot|woff)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
           }
 
         }]
     },
     {
         test: /\.(html)$/,
-        use: ['html-loader']
-    }]
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: ''
+          }
+
+        }]
+    },
+    // {
+    //     test: /\.(html)/,
+    //     use: ['html-loader']
+    // }
+    ]
   },
   plugins: [
     extractPlugin,
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-        template: 'index.html'
-    })
+    new CleanWebpackPlugin(['dist'])
+    // new HtmlWebpackPlugin({
+    //     template: 'index.html'
+    // }
+    // )
   ]
 }
 module.exports = config

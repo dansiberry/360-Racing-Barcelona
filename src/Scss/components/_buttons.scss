@@ -1,0 +1,23 @@
+.btn {
+  padding: 1em 1.5em;
+}
+
+.btn--primary {
+  border: 1px solid $brand-black;
+  transition: .5s;
+
+  &:hover {
+    border: 1px solid $brand-white;
+    background-color: $brand-black;
+    color: $brand-white;
+  }
+}
+
+.btn--secondary {
+  border: 1px solid $brand-white;
+  color: $brand-white;
+  &:hover {
+    background-color: $brand-white;
+    color: $brand-black;
+  }
+}

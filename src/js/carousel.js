@@ -1,24 +1,42 @@
-let items = document.getElementsByClassName("carousel__carousel-item");
-let frame = document.getElementsByClassName("carousel__carousel-frame")[0];
-let width = items.length*100
-let count = 1
-initializeCarousel()
+let items = Array.from(document.getElementsByClassName("b-carousel__carousel-item"));
+let frame = document.getElementsByClassName("b-carousel__carousel-frame")[0];
+let order = items.length
+let count = 0
 
-function initializeCarousel() {
-  console.log(width)
-  frame.style.width = width + "vw";
+window.carouselBack = function() {
+  if(items[count]){
+    frame.classList.add('hide')
+    setTimeout(
+      function() {
+        items[count].style.order = order + 1
+        count ++
+        order ++
+        frame.classList.remove('hide')
+      }
+    , 300 )
+  } else {
+    count = 0
+    window.carouselBack()
+  }
 }
 
 window.carouselForward = function() {
-  if(count < items.length) {
-    count ++
-    frame.style.transform = "translate(-" + (count*100-100) +"vw, 0vw)";
+  if(items[count - 1]){
+    frame.classList.add('hide')
+    setTimeout(
+      function() {
+        items[count - 1].style.order = order - items.length
+        count --
+        order --
+        frame.classList.remove('hide')
+      }
+    , 300 )
+  } else {
+    count = items.length
+    window.carouselForward()
   }
 }
 
-window.carouselBack = function() {
-  if(count > 1) {
-    count --
-    frame.style.transform = "translate(-" + (count*100-100) +"vw, 0vw)";
-  }
-}
+import '../owners.html'
+import '../racing.html'
+import '../collection.html'

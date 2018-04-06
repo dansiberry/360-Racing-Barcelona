@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+@font-face {
+  font-family: 'sqr';
+      src: url('../fonts/sqr.eot'), /* IE9 Compat Modes */
+  // src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  //      url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+           url('../fonts/sqr.woff') format('woff'), /* Pretty Modern Browsers */
+           url('../fonts/sqr.ttf')  format('truetype'); /* Safari, Android, iOS */
+       // url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'sqrbold';
+  // src: url('webfont.eot'); /* IE9 Compat Modes */
+  // src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  //      url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       src: url('../fonts/sqrbold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../fonts/sqrbold.ttf')  format('truetype'); /* Safari, Android, iOS */
+       // url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
