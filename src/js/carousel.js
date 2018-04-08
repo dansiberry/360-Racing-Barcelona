@@ -37,6 +37,9 @@ window.carouselForward = function() {
   }
 }
 
+import '../index.html'
 import '../owners.html'
 import '../racing.html'
 import '../collection.html'
+import '../images/logo.png'
+import '../images/favicon.png'

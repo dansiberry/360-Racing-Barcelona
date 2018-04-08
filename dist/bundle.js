@@ -60,16 +60,22 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "index.html";
+
+/***/ }),
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_html__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_html__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scss_styles_scss__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scss_styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scss_styles_scss__);
@@ -80,12 +86,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "index.html";
 
 /***/ }),
 /* 2 */
@@ -107,12 +107,18 @@ window.toggleMobileMenu = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__owners_html__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__owners_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__owners_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__racing_html__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__racing_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__racing_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collection_html__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collection_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__collection_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_html__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__owners_html__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__owners_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__owners_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__racing_html__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__racing_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__racing_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collection_html__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collection_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__collection_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_logo_png__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_logo_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_favicon_png__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_favicon_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_favicon_png__);
 var items = Array.from(document.getElementsByClassName("b-carousel__carousel-item"));
 var frame = document.getElementsByClassName("b-carousel__carousel-frame")[0];
 var order = items.length;
@@ -152,6 +158,9 @@ window.carouselForward = function () {
 
 
 
+
+
+
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -165,17 +174,29 @@ module.exports = __webpack_require__.p + "owners.html";
 module.exports = __webpack_require__.p + "racing.html";
 
 /***/ }),
-/* 7 */,
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "collection.html";
+
+/***/ }),
 /* 8 */,
 /* 9 */,
 /* 10 */,
 /* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */
+/* 14 */,
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "collection.html";
+module.exports = __webpack_require__.p + "images/logo.png";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/favicon.png";
 
 /***/ })
 /******/ ]);
