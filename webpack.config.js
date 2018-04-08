@@ -12,7 +12,7 @@ const config = {
   context: path.resolve(__dirname, 'src'),
   entry: './app.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js'
   },
   watch: true,

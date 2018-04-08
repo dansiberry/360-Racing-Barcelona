@@ -115,9 +115,9 @@ window.toggleMobileMenu = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__racing_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__racing_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collection_html__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collection_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__collection_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_logo_png__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_logo_png__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_logo_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_favicon_png__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_favicon_png__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_favicon_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_favicon_png__);
 var items = Array.from(document.getElementsByClassName("b-carousel__carousel-item"));
 var frame = document.getElementsByClassName("b-carousel__carousel-frame")[0];
@@ -180,20 +180,13 @@ module.exports = __webpack_require__.p + "racing.html";
 module.exports = __webpack_require__.p + "collection.html";
 
 /***/ }),
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/logo.png";
 
 /***/ }),
-/* 16 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/favicon.png";
